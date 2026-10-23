@@ -62,20 +62,16 @@ jobs:
         uses: actions/deploy-pages@v4
 `;
 
-  const manualCliCommands = `# 1. Build the production static distribution
-npm run build
+  const manualCliCommands = `# 1. Create a repository on GitHub named 'millis-to-tz':
+# https://github.com/new
 
-# 2. Initialize or push to your GitHub repo
-git add .
-git commit -m "feat: complete Millis to TZ application"
-git branch -M main
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>.git
+# 2. Push to your repository:
 git push -u origin main
 
-# 3. For manual branch deployment (alternative to Actions):
-# Install gh-pages package: npm install -D gh-pages
-# Add to package.json scripts: "deploy": "gh-pages -d dist"
-# Then run: npm run deploy
+# 3. Enable GitHub Pages in your repo:
+# Go to https://github.com/imkathir/millis-to-tz/settings/pages
+# Under 'Source', select 'GitHub Actions'
+# Your site will go live at: https://imkathir.github.io/millis-to-tz/
 `;
 
   const copyToClipboard = (text: string, sectionId: string) => {

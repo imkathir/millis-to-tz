@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1422" />
+      <stop offset="100%" stop-color="#080c14" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Squircle Base -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="2" />
+  
+  <!-- Outer Chronometer Dial -->
+  <circle cx="32" cy="32" r="23" fill="none" stroke="#1e293b" stroke-width="2" />
+  <circle cx="32" cy="32" r="23" fill="none" stroke="url(#glowGrad)" stroke-width="2.5" stroke-dasharray="144" stroke-dashoffset="36" stroke-linecap="round" />
+  
+  <!-- Dial Tick Marks -->
+  <line x1="32" y1="12" x2="32" y2="16" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+  <line x1="52" y1="32" x2="48" y2="32" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" />
+  <line x1="32" y1="52" x2="32" y2="48" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+  <line x1="12" y1="32" x2="16" y2="32" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Clock Hands pointing to 10:10 with precise millisecond runner -->
+  <line x1="32" y1="32" x2="22" y2="24" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="32" y1="32" x2="43" y2="22" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" />
+  <line x1="32" y1="32" x2="32" y2="45" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" />
+  
+  <!-- Center Pin -->
+  <circle cx="32" cy="32" r="3.5" fill="#10b981" stroke="#080c14" stroke-width="1.5" />
+</svg>

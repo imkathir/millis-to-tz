@@ -1,6 +1,0 @@
-{
-  "name": "Millis to TZ",
-  "description": "High-precision Unix timestamp & millisecond converter, multi-timezone world clock matrix, batch log parser, and cron debugger ready for GitHub Pages.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
